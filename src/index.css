@@ -1,13 +1,71 @@
+/* הגדרות כלליות */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  direction: rtl; /* הגדרת כיוון עברי */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.flex {
+  display: flex;
+
+}
+
+.flex-col {
+  flex-direction: column;
+
+}
+
+.items-center {
+  align-items: center;
+}
+
+
+
+/* מיקום הכותרות והקלטים */
+.label-container {
+  display: flex;
+  flex-direction: row-reverse; /* הכותרת בצד ימין */
+  align-items: center;
+}
+
+
+
+h3 {
+  font-size: 1.25rem;
+  color: #1e40af;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input[type="range"] {
+  appearance: none;
+  height: 6px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background: linear-gradient(to left, #60a5fa, #3b82f6);
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2563eb;
+  cursor: pointer;
+  border: 2px solid #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+canvas {
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+
+
 }
